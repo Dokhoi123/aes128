@@ -8,6 +8,6 @@ module add_round_key(
 	);
 	
 	assign state_ark_out = round_key ^ state_ark_in;
-	
+
 	
 endmodule

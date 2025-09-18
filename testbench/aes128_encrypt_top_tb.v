@@ -1,23 +1,5 @@
 `timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date: 27.10.2017 11:40:35
-// Design Name: 
-// Module Name: AES_top_tb
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
-//////////////////////////////////////////////////////////////////////////////////
+
 
 module aes128_encrypt_top_tb();
     
@@ -70,10 +52,10 @@ module aes128_encrypt_top_tb();
 		begin
 		key        = 128'h100F0E0D0C0B0A090807060504030201; //v      
 		plain_text = 128'h54494d47206e616c6f4e20726f6e6f43;//v
-		#(4000*T);
+		#(100*T);
 		key        = 128'h100F0E0D0C0B0A090807060504130201; //v      
 		plain_text = 128'h52494d47206e616c6f4e20726f6e6f43;//v
-		#(4000*T);
+		#(100*T);
 		key        = 128'h110F0E0D0C0B0A090807060504130201; //v      
 		plain_text = 128'h53494d47206e616c6f4e20726f6e6f43;//v
 		//....
