@@ -1,0 +1,16 @@
+0.6
+2018.3
+Dec  7 2018
+00:33:28
+D:/doan2/aes128/src/add_round_key.v,1758099171,verilog,,D:/doan2/aes128/src/aes128_encrypt_top.v,,add_round_key,,,,,,,,
+D:/doan2/aes128/src/aes128_encrypt_top.v,1758949294,verilog,,D:/doan2/aes128/src/encrypt_final_round.v,,aes128_encrypt_top,,,,,,,,
+D:/doan2/aes128/src/encrypt_final_round.v,1691077395,verilog,,D:/doan2/aes128/src/encrypt_round.v,,encrypt_final_round,,,,,,,,
+D:/doan2/aes128/src/encrypt_round.v,1691077143,verilog,,D:/doan2/aes128/src/encrypt_top.v,,encrypt_round,,,,,,,,
+D:/doan2/aes128/src/encrypt_top.v,1691086817,verilog,,D:/doan2/aes128/src/expand_key_core_fix.v,,encrypt_top,,,,,,,,
+D:/doan2/aes128/src/expand_key_core_fix.v,1691002696,verilog,,D:/doan2/aes128/src/expand_key_top.v,,expand_key_core_fix,,,,,,,,
+D:/doan2/aes128/src/expand_key_top.v,1691003682,verilog,,D:/doan2/aes128/src/mix_columns.v,,expand_key_top,,,,,,,,
+D:/doan2/aes128/src/mix_columns.v,1691086196,verilog,,D:/doan2/aes128/src/shift_rows.v,,mix_columns,,,,,,,,
+D:/doan2/aes128/src/shift_rows.v,1758099477,verilog,,D:/doan2/aes128/src/sub_bytes2.v,,shift_rows,,,,,,,,
+D:/doan2/aes128/src/sub_bytes2.v,1758095730,verilog,,D:/doan2/aes128/testbench/aes128_encrypt_top_tb.v,,sub_bytes,,,,,,,,
+,,,,,,aes128_encrypt_top_tb,,,,,,,,
+D:/doan2/aes128/vivado/project_1/project_1.sim/sim_1/behav/xsim/glbl.v,1544155481,verilog,,,,glbl,,,,,,,,

@@ -4,7 +4,8 @@
 module aes128_encrypt_top_tb();
     
     localparam T = 10;
-    reg clk, reset;
+    reg clk, rst;
+    reg load_plain_text;
 	//wire [127:0] key;
 	reg [127:0] key;
     wire [1407:0] expanded_key;
@@ -12,24 +13,14 @@ module aes128_encrypt_top_tb();
 	reg [127:0] plain_text;
 	wire [127:0] cipher_text;
 	
-	
-    aes128_encrypt_top i_aes128_encrypt_top (
+	  FSM      DUT (
 	    . clk(clk),
-	    . reset(reset),
-	    . key_0(key[31:0]),
-	    . key_1(key[63:32]),
-	    . key_2(key[95:64]),
-	    . key_3(key[127:96]),
-	    . plain_text_0(plain_text[31:0]),
-	    . plain_text_1(plain_text[63:32]),
-	    . plain_text_2(plain_text[95:64]),
-	    . plain_text_3(plain_text[127:96]),	 
+	    . load_plain_text(load_plain_text),
+	    . rst(rst),
+            . key(key),
+	    . plain_text(plain_text),
 //	    . expanded_key(expanded_key),
-	    . cipher_text_0(cipher_text[31:0]),
-	    . cipher_text_1(cipher_text[63:32]),
-	    . cipher_text_2(cipher_text[95:64]),
-	    . cipher_text_3(cipher_text[127:96])
-	   
+	    . cipher_text(cipher_text)	   
 		);
 	
 
@@ -43,9 +34,18 @@ module aes128_encrypt_top_tb();
     
     initial
     begin
-        reset = 1'b1;
+        rst = 1'b0;
+        
         #(T/2);
-        reset = 1'b0;
+        rst = 1'b1;
+	load_plain_text = 1'b1;
+	#(T); 
+	load_plain_text = 1'b0;
+	#(100*T);
+	load_plain_text = 1'b1;
+	#(5*T);
+	load_plain_text = 1'b0;
+
     end
     
 	initial

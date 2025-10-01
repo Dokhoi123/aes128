@@ -1,0 +1,22 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/doan2/aes128/src/add_round_key.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module add_round_key
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/doan2/aes128/src/aes128_encrypt_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module aes128_encrypt_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/doan2/aes128/src/encrypt_final_round.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module encrypt_final_round
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/doan2/aes128/src/encrypt_round.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module encrypt_round
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/doan2/aes128/src/encrypt_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module encrypt_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/doan2/aes128/src/expand_key_core_fix.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module expand_key_core_fix
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/doan2/aes128/src/expand_key_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module expand_key_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/doan2/aes128/src/mix_columns.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mix_columns
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/doan2/aes128/src/shift_rows.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module shift_rows
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/doan2/aes128/src/sub_bytes2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sub_bytes
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/doan2/aes128/testbench/aes128_encrypt_top_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module aes128_encrypt_top_tb

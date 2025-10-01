@@ -1,0 +1,19 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../../../src/add_round_key.v" \
+"../../../../../../src/aes128_encrypt_top.v" \
+"../../../../../../src/encrypt_final_round.v" \
+"../../../../../../src/encrypt_round.v" \
+"../../../../../../src/encrypt_top.v" \
+"../../../../../../src/expand_key_core_fix.v" \
+"../../../../../../src/expand_key_top.v" \
+"../../../../../../src/mix_columns.v" \
+"../../../../../../src/shift_rows.v" \
+"../../../../../../src/sub_bytes2.v" \
+"../../../../../../testbench/aes128_encrypt_top_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

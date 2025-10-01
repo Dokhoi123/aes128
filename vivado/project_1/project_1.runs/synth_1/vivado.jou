@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Mon Sep 29 10:33:55 2025
+# Process ID: 4464
+# Current directory: D:/doan2/aes128/vivado/project_1/project_1.runs/synth_1
+# Command line: vivado.exe -log aes128_encrypt_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source aes128_encrypt_top.tcl
+# Log file: D:/doan2/aes128/vivado/project_1/project_1.runs/synth_1/aes128_encrypt_top.vds
+# Journal file: D:/doan2/aes128/vivado/project_1/project_1.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source aes128_encrypt_top.tcl -notrace

@@ -1,0 +1,692 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Mon Sep 29 10:33:55 2025
+# Process ID: 4464
+# Current directory: D:/doan2/aes128/vivado/project_1/project_1.runs/synth_1
+# Command line: vivado.exe -log aes128_encrypt_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source aes128_encrypt_top.tcl
+# Log file: D:/doan2/aes128/vivado/project_1/project_1.runs/synth_1/aes128_encrypt_top.vds
+# Journal file: D:/doan2/aes128/vivado/project_1/project_1.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source aes128_encrypt_top.tcl -notrace
+Command: synth_design -top aes128_encrypt_top -part xc7k70tfbv676-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7k70t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k70t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 17096 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 363.082 ; gain = 100.484
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'aes128_encrypt_top' [D:/doan2/aes128/src/aes128_encrypt_top.v:4]
+INFO: [Synth 8-6157] synthesizing module 'expand_key_top' [D:/doan2/aes128/src/expand_key_top.v:3]
+INFO: [Synth 8-6157] synthesizing module 'expand_key_core_fix' [D:/doan2/aes128/src/expand_key_core_fix.v:5]
+INFO: [Synth 8-226] default block is never used [D:/doan2/aes128/src/expand_key_core_fix.v:71]
+INFO: [Synth 8-226] default block is never used [D:/doan2/aes128/src/expand_key_core_fix.v:71]
+INFO: [Synth 8-226] default block is never used [D:/doan2/aes128/src/expand_key_core_fix.v:71]
+INFO: [Synth 8-226] default block is never used [D:/doan2/aes128/src/expand_key_core_fix.v:71]
+INFO: [Synth 8-6155] done synthesizing module 'expand_key_core_fix' (1#1) [D:/doan2/aes128/src/expand_key_core_fix.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'expand_key_top' (2#1) [D:/doan2/aes128/src/expand_key_top.v:3]
+INFO: [Synth 8-6157] synthesizing module 'encrypt_top' [D:/doan2/aes128/src/encrypt_top.v:4]
+INFO: [Synth 8-6157] synthesizing module 'add_round_key' [D:/doan2/aes128/src/add_round_key.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'add_round_key' (3#1) [D:/doan2/aes128/src/add_round_key.v:4]
+INFO: [Synth 8-6157] synthesizing module 'encrypt_round' [D:/doan2/aes128/src/encrypt_round.v:4]
+INFO: [Synth 8-6157] synthesizing module 'sub_bytes' [D:/doan2/aes128/src/sub_bytes2.v:3]
+INFO: [Synth 8-226] default block is never used [D:/doan2/aes128/src/sub_bytes2.v:27]
+INFO: [Synth 8-226] default block is never used [D:/doan2/aes128/src/sub_bytes2.v:27]
+INFO: [Synth 8-226] default block is never used [D:/doan2/aes128/src/sub_bytes2.v:27]
+INFO: [Synth 8-226] default block is never used [D:/doan2/aes128/src/sub_bytes2.v:27]
+INFO: [Synth 8-226] default block is never used [D:/doan2/aes128/src/sub_bytes2.v:27]
+INFO: [Synth 8-226] default block is never used [D:/doan2/aes128/src/sub_bytes2.v:27]
+INFO: [Synth 8-226] default block is never used [D:/doan2/aes128/src/sub_bytes2.v:27]
+INFO: [Synth 8-226] default block is never used [D:/doan2/aes128/src/sub_bytes2.v:27]
+INFO: [Synth 8-226] default block is never used [D:/doan2/aes128/src/sub_bytes2.v:27]
+INFO: [Synth 8-226] default block is never used [D:/doan2/aes128/src/sub_bytes2.v:27]
+INFO: [Synth 8-226] default block is never used [D:/doan2/aes128/src/sub_bytes2.v:27]
+INFO: [Synth 8-226] default block is never used [D:/doan2/aes128/src/sub_bytes2.v:27]
+INFO: [Synth 8-226] default block is never used [D:/doan2/aes128/src/sub_bytes2.v:27]
+INFO: [Synth 8-226] default block is never used [D:/doan2/aes128/src/sub_bytes2.v:27]
+INFO: [Synth 8-226] default block is never used [D:/doan2/aes128/src/sub_bytes2.v:27]
+INFO: [Synth 8-226] default block is never used [D:/doan2/aes128/src/sub_bytes2.v:27]
+INFO: [Synth 8-6155] done synthesizing module 'sub_bytes' (4#1) [D:/doan2/aes128/src/sub_bytes2.v:3]
+INFO: [Synth 8-6157] synthesizing module 'shift_rows' [D:/doan2/aes128/src/shift_rows.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'shift_rows' (5#1) [D:/doan2/aes128/src/shift_rows.v:4]
+INFO: [Synth 8-6157] synthesizing module 'mix_columns' [D:/doan2/aes128/src/mix_columns.v:4]
+INFO: [Synth 8-226] default block is never used [D:/doan2/aes128/src/mix_columns.v:53]
+INFO: [Synth 8-226] default block is never used [D:/doan2/aes128/src/mix_columns.v:332]
+INFO: [Synth 8-226] default block is never used [D:/doan2/aes128/src/mix_columns.v:53]
+INFO: [Synth 8-226] default block is never used [D:/doan2/aes128/src/mix_columns.v:332]
+INFO: [Synth 8-226] default block is never used [D:/doan2/aes128/src/mix_columns.v:53]
+INFO: [Synth 8-226] default block is never used [D:/doan2/aes128/src/mix_columns.v:332]
+INFO: [Synth 8-226] default block is never used [D:/doan2/aes128/src/mix_columns.v:53]
+INFO: [Synth 8-226] default block is never used [D:/doan2/aes128/src/mix_columns.v:332]
+INFO: [Synth 8-226] default block is never used [D:/doan2/aes128/src/mix_columns.v:53]
+INFO: [Synth 8-226] default block is never used [D:/doan2/aes128/src/mix_columns.v:332]
+INFO: [Synth 8-226] default block is never used [D:/doan2/aes128/src/mix_columns.v:53]
+INFO: [Synth 8-226] default block is never used [D:/doan2/aes128/src/mix_columns.v:332]
+INFO: [Synth 8-226] default block is never used [D:/doan2/aes128/src/mix_columns.v:53]
+INFO: [Synth 8-226] default block is never used [D:/doan2/aes128/src/mix_columns.v:332]
+INFO: [Synth 8-226] default block is never used [D:/doan2/aes128/src/mix_columns.v:53]
+INFO: [Synth 8-226] default block is never used [D:/doan2/aes128/src/mix_columns.v:332]
+INFO: [Synth 8-226] default block is never used [D:/doan2/aes128/src/mix_columns.v:53]
+INFO: [Synth 8-226] default block is never used [D:/doan2/aes128/src/mix_columns.v:332]
+INFO: [Synth 8-226] default block is never used [D:/doan2/aes128/src/mix_columns.v:53]
+INFO: [Synth 8-226] default block is never used [D:/doan2/aes128/src/mix_columns.v:332]
+INFO: [Synth 8-226] default block is never used [D:/doan2/aes128/src/mix_columns.v:53]
+INFO: [Synth 8-226] default block is never used [D:/doan2/aes128/src/mix_columns.v:332]
+INFO: [Synth 8-226] default block is never used [D:/doan2/aes128/src/mix_columns.v:53]
+INFO: [Synth 8-226] default block is never used [D:/doan2/aes128/src/mix_columns.v:332]
+INFO: [Synth 8-226] default block is never used [D:/doan2/aes128/src/mix_columns.v:332]
+INFO: [Synth 8-226] default block is never used [D:/doan2/aes128/src/mix_columns.v:53]
+INFO: [Synth 8-226] default block is never used [D:/doan2/aes128/src/mix_columns.v:332]
+INFO: [Synth 8-226] default block is never used [D:/doan2/aes128/src/mix_columns.v:53]
+INFO: [Synth 8-226] default block is never used [D:/doan2/aes128/src/mix_columns.v:332]
+INFO: [Synth 8-226] default block is never used [D:/doan2/aes128/src/mix_columns.v:53]
+INFO: [Synth 8-226] default block is never used [D:/doan2/aes128/src/mix_columns.v:332]
+INFO: [Synth 8-226] default block is never used [D:/doan2/aes128/src/mix_columns.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'mix_columns' (6#1) [D:/doan2/aes128/src/mix_columns.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'encrypt_round' (7#1) [D:/doan2/aes128/src/encrypt_round.v:4]
+INFO: [Synth 8-6157] synthesizing module 'encrypt_final_round' [D:/doan2/aes128/src/encrypt_final_round.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'encrypt_final_round' (8#1) [D:/doan2/aes128/src/encrypt_final_round.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'encrypt_top' (9#1) [D:/doan2/aes128/src/encrypt_top.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'aes128_encrypt_top' (10#1) [D:/doan2/aes128/src/aes128_encrypt_top.v:4]
+WARNING: [Synth 8-3331] design aes128_encrypt_top has unconnected port reset
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 439.945 ; gain = 177.348
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 439.945 ; gain = 177.348
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7k70tfbv676-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 439.945 ; gain = 177.348
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7k70tfbv676-1
+INFO: [Synth 8-5546] ROM "Rcon" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 575.926 ; gain = 313.328
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input    128 Bit         XORs := 11    
+	   2 Input     32 Bit         XORs := 40    
+	   2 Input      8 Bit         XORs := 10    
+	   4 Input      8 Bit         XORs := 144   
++---Registers : 
+	              128 Bit    Registers := 10    
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 10    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module expand_key_core_fix 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input     32 Bit         XORs := 4     
+	   2 Input      8 Bit         XORs := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module add_round_key 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input    128 Bit         XORs := 1     
+Module mix_columns 
+Detailed RTL Component Info : 
++---XORs : 
+	   4 Input      8 Bit         XORs := 16    
+Module encrypt_top 
+Detailed RTL Component Info : 
++---Registers : 
+	              128 Bit    Registers := 10    
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3331] design aes128_encrypt_top has unconnected port reset
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:46 ; elapsed = 00:00:48 . Memory (MB): peak = 941.945 ; gain = 679.348
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++--------------------+--------------------------+---------------+----------------+
+|Module Name         | RTL Object               | Depth x Width | Implemented As | 
++--------------------+--------------------------+---------------+----------------+
+|expand_key_core_fix | sbox2                    | 256x8         | LUT            | 
+|expand_key_core_fix | sbox1                    | 256x8         | LUT            | 
+|expand_key_core_fix | sbox0                    | 256x8         | LUT            | 
+|expand_key_core_fix | sbox                     | 256x8         | LUT            | 
+|sub_bytes           | sbox                     | 256x8         | LUT            | 
+|sub_bytes           | sbox3                    | 256x8         | LUT            | 
+|sub_bytes           | sbox4                    | 256x8         | LUT            | 
+|sub_bytes           | sbox5                    | 256x8         | LUT            | 
+|sub_bytes           | sbox6                    | 256x8         | LUT            | 
+|sub_bytes           | sbox7                    | 256x8         | LUT            | 
+|sub_bytes           | sbox8                    | 256x8         | LUT            | 
+|sub_bytes           | sbox9                    | 256x8         | LUT            | 
+|sub_bytes           | sbox10                   | 256x8         | LUT            | 
+|sub_bytes           | sbox11                   | 256x8         | LUT            | 
+|sub_bytes           | sbox12                   | 256x8         | LUT            | 
+|sub_bytes           | sbox13                   | 256x8         | LUT            | 
+|sub_bytes           | sbox14                   | 256x8         | LUT            | 
+|sub_bytes           | sbox15                   | 256x8         | LUT            | 
+|sub_bytes           | sbox16                   | 256x8         | LUT            | 
+|sub_bytes           | sbox17                   | 256x8         | LUT            | 
+|mix_columns         | mul_by_214               | 256x8         | LUT            | 
+|mix_columns         | mul_by_314               | 256x8         | LUT            | 
+|mix_columns         | mul_by_210               | 256x8         | LUT            | 
+|mix_columns         | mul_by_310               | 256x8         | LUT            | 
+|mix_columns         | mul_by_26                | 256x8         | LUT            | 
+|mix_columns         | mul_by_36                | 256x8         | LUT            | 
+|mix_columns         | mul_by_32                | 256x8         | LUT            | 
+|mix_columns         | mul_by_22                | 256x8         | LUT            | 
+|mix_columns         | mul_by_213               | 256x8         | LUT            | 
+|mix_columns         | mul_by_313               | 256x8         | LUT            | 
+|mix_columns         | mul_by_29                | 256x8         | LUT            | 
+|mix_columns         | mul_by_39                | 256x8         | LUT            | 
+|mix_columns         | mul_by_25                | 256x8         | LUT            | 
+|mix_columns         | mul_by_35                | 256x8         | LUT            | 
+|mix_columns         | mul_by_31                | 256x8         | LUT            | 
+|mix_columns         | mul_by_21                | 256x8         | LUT            | 
+|mix_columns         | mul_by_212               | 256x8         | LUT            | 
+|mix_columns         | mul_by_312               | 256x8         | LUT            | 
+|mix_columns         | mul_by_28                | 256x8         | LUT            | 
+|mix_columns         | mul_by_38                | 256x8         | LUT            | 
+|mix_columns         | mul_by_24                | 256x8         | LUT            | 
+|mix_columns         | mul_by_34                | 256x8         | LUT            | 
+|mix_columns         | mul_by_30                | 256x8         | LUT            | 
+|mix_columns         | mul_by_20                | 256x8         | LUT            | 
+|mix_columns         | mul_by_211               | 256x8         | LUT            | 
+|mix_columns         | mul_by_311               | 256x8         | LUT            | 
+|mix_columns         | mul_by_27                | 256x8         | LUT            | 
+|mix_columns         | mul_by_37                | 256x8         | LUT            | 
+|mix_columns         | mul_by_23                | 256x8         | LUT            | 
+|mix_columns         | mul_by_33                | 256x8         | LUT            | 
+|mix_columns         | mul_by_3                 | 256x8         | LUT            | 
+|mix_columns         | mul_by_2                 | 256x8         | LUT            | 
+|expand_key_core_fix | sbox2                    | 256x8         | LUT            | 
+|expand_key_core_fix | sbox1                    | 256x8         | LUT            | 
+|expand_key_core_fix | sbox0                    | 256x8         | LUT            | 
+|expand_key_core_fix | sbox                     | 256x8         | LUT            | 
+|expand_key_core_fix | sbox2                    | 256x8         | LUT            | 
+|expand_key_core_fix | sbox0                    | 256x8         | LUT            | 
+|expand_key_core_fix | sbox1                    | 256x8         | LUT            | 
+|expand_key_core_fix | sbox0                    | 256x8         | LUT            | 
+|expand_key_core_fix | sbox                     | 256x8         | LUT            | 
+|expand_key_core_fix | sbox2                    | 256x8         | LUT            | 
+|expand_key_core_fix | sbox2                    | 256x8         | LUT            | 
+|expand_key_core_fix | sbox                     | 256x8         | LUT            | 
+|expand_key_core_fix | sbox1                    | 256x8         | LUT            | 
+|expand_key_core_fix | sbox0                    | 256x8         | LUT            | 
+|expand_key_core_fix | sbox                     | 256x8         | LUT            | 
+|expand_key_core_fix | sbox2                    | 256x8         | LUT            | 
+|expand_key_core_fix | sbox2                    | 256x8         | LUT            | 
+|expand_key_core_fix | sbox1                    | 256x8         | LUT            | 
+|expand_key_core_fix | sbox0                    | 256x8         | LUT            | 
+|expand_key_core_fix | sbox                     | 256x8         | LUT            | 
+|expand_key_core_fix | sbox2                    | 256x8         | LUT            | 
+|expand_key_core_fix | sbox1                    | 256x8         | LUT            | 
+|expand_key_core_fix | sbox0                    | 256x8         | LUT            | 
+|expand_key_core_fix | sbox                     | 256x8         | LUT            | 
+|encrypt_round       | i_mix_columns/mul_by_214 | 256x8         | LUT            | 
+|encrypt_round       | i_sub_bytes/sbox         | 256x8         | LUT            | 
+|encrypt_round       | i_sub_bytes/sbox3        | 256x8         | LUT            | 
+|encrypt_round       | i_sub_bytes/sbox4        | 256x8         | LUT            | 
+|encrypt_round       | i_sub_bytes/sbox9        | 256x8         | LUT            | 
+|encrypt_round       | i_sub_bytes/sbox12       | 256x8         | LUT            | 
+|encrypt_round       | i_sub_bytes/sbox13       | 256x8         | LUT            | 
+|encrypt_round       | i_sub_bytes/sbox14       | 256x8         | LUT            | 
+|encrypt_round       | i_sub_bytes/sbox15       | 256x8         | LUT            | 
+|encrypt_round       | i_sub_bytes/sbox16       | 256x8         | LUT            | 
+|encrypt_round       | i_sub_bytes/sbox17       | 256x8         | LUT            | 
+|encrypt_round       | i_mix_columns/mul_by_314 | 256x8         | LUT            | 
+|encrypt_round       | i_mix_columns/mul_by_210 | 256x8         | LUT            | 
+|encrypt_round       | i_mix_columns/mul_by_36  | 256x8         | LUT            | 
+|encrypt_round       | i_mix_columns/mul_by_32  | 256x8         | LUT            | 
+|encrypt_round       | i_mix_columns/mul_by_39  | 256x8         | LUT            | 
+|encrypt_round       | i_mix_columns/mul_by_35  | 256x8         | LUT            | 
+|encrypt_round       | i_mix_columns/mul_by_21  | 256x8         | LUT            | 
+|encrypt_round       | i_mix_columns/mul_by_312 | 256x8         | LUT            | 
+|encrypt_round       | i_mix_columns/mul_by_28  | 256x8         | LUT            | 
+|encrypt_round       | i_mix_columns/mul_by_27  | 256x8         | LUT            | 
+|encrypt_round       | i_mix_columns/mul_by_37  | 256x8         | LUT            | 
+|encrypt_round       | i_mix_columns/mul_by_23  | 256x8         | LUT            | 
+|encrypt_round       | i_mix_columns/mul_by_33  | 256x8         | LUT            | 
+|encrypt_round       | i_mix_columns/mul_by_3   | 256x8         | LUT            | 
+|encrypt_round       | i_mix_columns/mul_by_2   | 256x8         | LUT            | 
+|encrypt_round       | i_sub_bytes/sbox         | 256x8         | LUT            | 
+|encrypt_round       | i_sub_bytes/sbox3        | 256x8         | LUT            | 
+|encrypt_round       | i_sub_bytes/sbox4        | 256x8         | LUT            | 
+|encrypt_round       | i_sub_bytes/sbox5        | 256x8         | LUT            | 
+|encrypt_round       | i_sub_bytes/sbox6        | 256x8         | LUT            | 
+|encrypt_round       | i_sub_bytes/sbox7        | 256x8         | LUT            | 
+|encrypt_round       | i_sub_bytes/sbox8        | 256x8         | LUT            | 
+|encrypt_round       | i_sub_bytes/sbox9        | 256x8         | LUT            | 
+|encrypt_round       | i_sub_bytes/sbox10       | 256x8         | LUT            | 
+|encrypt_round       | i_sub_bytes/sbox11       | 256x8         | LUT            | 
+|encrypt_round       | i_sub_bytes/sbox12       | 256x8         | LUT            | 
+|encrypt_round       | i_sub_bytes/sbox13       | 256x8         | LUT            | 
+|encrypt_round       | i_sub_bytes/sbox14       | 256x8         | LUT            | 
+|encrypt_round       | i_sub_bytes/sbox15       | 256x8         | LUT            | 
+|encrypt_round       | i_sub_bytes/sbox16       | 256x8         | LUT            | 
+|encrypt_round       | i_sub_bytes/sbox17       | 256x8         | LUT            | 
+|encrypt_round       | i_mix_columns/mul_by_214 | 256x8         | LUT            | 
+|encrypt_round       | i_mix_columns/mul_by_314 | 256x8         | LUT            | 
+|encrypt_round       | i_mix_columns/mul_by_210 | 256x8         | LUT            | 
+|encrypt_round       | i_mix_columns/mul_by_310 | 256x8         | LUT            | 
+|encrypt_round       | i_mix_columns/mul_by_26  | 256x8         | LUT            | 
+|encrypt_round       | i_mix_columns/mul_by_36  | 256x8         | LUT            | 
+|encrypt_round       | i_mix_columns/mul_by_32  | 256x8         | LUT            | 
+|encrypt_round       | i_mix_columns/mul_by_22  | 256x8         | LUT            | 
+|encrypt_round       | i_mix_columns/mul_by_213 | 256x8         | LUT            | 
+|encrypt_round       | i_mix_columns/mul_by_313 | 256x8         | LUT            | 
+|encrypt_round       | i_mix_columns/mul_by_29  | 256x8         | LUT            | 
+|encrypt_round       | i_mix_columns/mul_by_39  | 256x8         | LUT            | 
+|encrypt_round       | i_mix_columns/mul_by_25  | 256x8         | LUT            | 
+|encrypt_round       | i_mix_columns/mul_by_35  | 256x8         | LUT            | 
+|encrypt_round       | i_mix_columns/mul_by_31  | 256x8         | LUT            | 
+|encrypt_round       | i_mix_columns/mul_by_21  | 256x8         | LUT            | 
+|encrypt_round       | i_mix_columns/mul_by_212 | 256x8         | LUT            | 
+|encrypt_round       | i_mix_columns/mul_by_312 | 256x8         | LUT            | 
+|encrypt_round       | i_mix_columns/mul_by_28  | 256x8         | LUT            | 
+|encrypt_round       | i_mix_columns/mul_by_38  | 256x8         | LUT            | 
+|encrypt_round       | i_mix_columns/mul_by_24  | 256x8         | LUT            | 
+|encrypt_round       | i_mix_columns/mul_by_34  | 256x8         | LUT            | 
+|encrypt_round       | i_mix_columns/mul_by_30  | 256x8         | LUT            | 
+|encrypt_round       | i_mix_columns/mul_by_20  | 256x8         | LUT            | 
+|encrypt_round       | i_mix_columns/mul_by_211 | 256x8         | LUT            | 
+|encrypt_round       | i_mix_columns/mul_by_311 | 256x8         | LUT            | 
+|encrypt_round       | i_mix_columns/mul_by_27  | 256x8         | LUT            | 
+|encrypt_round       | i_mix_columns/mul_by_37  | 256x8         | LUT            | 
+|encrypt_round       | i_mix_columns/mul_by_23  | 256x8         | LUT            | 
+|encrypt_round       | i_mix_columns/mul_by_33  | 256x8         | LUT            | 
+|encrypt_round       | i_mix_columns/mul_by_3   | 256x8         | LUT            | 
+|encrypt_round       | i_mix_columns/mul_by_2   | 256x8         | LUT            | 
+|encrypt_round       | i_sub_bytes/sbox6        | 256x8         | LUT            | 
+|encrypt_round       | i_sub_bytes/sbox8        | 256x8         | LUT            | 
+|encrypt_round       | i_sub_bytes/sbox11       | 256x8         | LUT            | 
+|encrypt_round       | i_sub_bytes/sbox13       | 256x8         | LUT            | 
+|encrypt_round       | i_mix_columns/mul_by_214 | 256x8         | LUT            | 
+|encrypt_round       | i_sub_bytes/sbox7        | 256x8         | LUT            | 
+|encrypt_round       | i_sub_bytes/sbox14       | 256x8         | LUT            | 
+|encrypt_round       | i_mix_columns/mul_by_25  | 256x8         | LUT            | 
+|encrypt_round       | i_mix_columns/mul_by_35  | 256x8         | LUT            | 
+|encrypt_round       | i_mix_columns/mul_by_31  | 256x8         | LUT            | 
+|encrypt_round       | i_mix_columns/mul_by_21  | 256x8         | LUT            | 
+|encrypt_round       | i_mix_columns/mul_by_212 | 256x8         | LUT            | 
+|encrypt_round       | i_mix_columns/mul_by_312 | 256x8         | LUT            | 
+|encrypt_round       | i_mix_columns/mul_by_28  | 256x8         | LUT            | 
+|encrypt_round       | i_mix_columns/mul_by_38  | 256x8         | LUT            | 
+|encrypt_round       | i_mix_columns/mul_by_24  | 256x8         | LUT            | 
+|encrypt_round       | i_mix_columns/mul_by_34  | 256x8         | LUT            | 
+|encrypt_round       | i_mix_columns/mul_by_30  | 256x8         | LUT            | 
+|encrypt_round       | i_mix_columns/mul_by_20  | 256x8         | LUT            | 
+|encrypt_round       | i_mix_columns/mul_by_211 | 256x8         | LUT            | 
+|encrypt_round       | i_mix_columns/mul_by_311 | 256x8         | LUT            | 
+|encrypt_round       | i_mix_columns/mul_by_27  | 256x8         | LUT            | 
+|encrypt_round       | i_mix_columns/mul_by_37  | 256x8         | LUT            | 
+|encrypt_round       | i_mix_columns/mul_by_23  | 256x8         | LUT            | 
+|encrypt_round       | i_mix_columns/mul_by_33  | 256x8         | LUT            | 
+|encrypt_round       | i_mix_columns/mul_by_3   | 256x8         | LUT            | 
+|encrypt_round       | i_mix_columns/mul_by_2   | 256x8         | LUT            | 
+|encrypt_round       | i_sub_bytes/sbox8        | 256x8         | LUT            | 
+|encrypt_round       | i_sub_bytes/sbox15       | 256x8         | LUT            | 
+|encrypt_round       | i_sub_bytes/sbox16       | 256x8         | LUT            | 
+|encrypt_round       | i_sub_bytes/sbox17       | 256x8         | LUT            | 
+|encrypt_round       | i_mix_columns/mul_by_214 | 256x8         | LUT            | 
+|encrypt_round       | i_mix_columns/mul_by_314 | 256x8         | LUT            | 
+|encrypt_round       | i_mix_columns/mul_by_210 | 256x8         | LUT            | 
+|encrypt_round       | i_mix_columns/mul_by_310 | 256x8         | LUT            | 
+|encrypt_round       | i_mix_columns/mul_by_26  | 256x8         | LUT            | 
+|encrypt_round       | i_mix_columns/mul_by_36  | 256x8         | LUT            | 
+|encrypt_round       | i_mix_columns/mul_by_32  | 256x8         | LUT            | 
+|encrypt_round       | i_mix_columns/mul_by_22  | 256x8         | LUT            | 
+|encrypt_round       | i_mix_columns/mul_by_213 | 256x8         | LUT            | 
+|encrypt_round       | i_mix_columns/mul_by_313 | 256x8         | LUT            | 
+|encrypt_round       | i_mix_columns/mul_by_29  | 256x8         | LUT            | 
+|encrypt_round       | i_mix_columns/mul_by_39  | 256x8         | LUT            | 
+|encrypt_round       | i_mix_columns/mul_by_25  | 256x8         | LUT            | 
+|encrypt_round       | i_mix_columns/mul_by_35  | 256x8         | LUT            | 
+|encrypt_round       | i_mix_columns/mul_by_31  | 256x8         | LUT            | 
+|encrypt_round       | i_mix_columns/mul_by_21  | 256x8         | LUT            | 
+|encrypt_round       | i_mix_columns/mul_by_212 | 256x8         | LUT            | 
+|encrypt_round       | i_mix_columns/mul_by_312 | 256x8         | LUT            | 
+|encrypt_round       | i_mix_columns/mul_by_28  | 256x8         | LUT            | 
+|encrypt_round       | i_mix_columns/mul_by_38  | 256x8         | LUT            | 
+|encrypt_round       | i_mix_columns/mul_by_24  | 256x8         | LUT            | 
+|encrypt_round       | i_mix_columns/mul_by_34  | 256x8         | LUT            | 
+|encrypt_round       | i_mix_columns/mul_by_30  | 256x8         | LUT            | 
+|encrypt_round       | i_mix_columns/mul_by_20  | 256x8         | LUT            | 
+|encrypt_round       | i_mix_columns/mul_by_211 | 256x8         | LUT            | 
+|encrypt_round       | i_mix_columns/mul_by_311 | 256x8         | LUT            | 
+|encrypt_round       | i_mix_columns/mul_by_27  | 256x8         | LUT            | 
+|encrypt_round       | i_sub_bytes/sbox11       | 256x8         | LUT            | 
+|encrypt_round       | i_mix_columns/mul_by_36  | 256x8         | LUT            | 
+|encrypt_round       | i_mix_columns/mul_by_38  | 256x8         | LUT            | 
+|encrypt_round       | i_mix_columns/mul_by_24  | 256x8         | LUT            | 
+|encrypt_round       | i_mix_columns/mul_by_34  | 256x8         | LUT            | 
+|encrypt_round       | i_mix_columns/mul_by_30  | 256x8         | LUT            | 
+|encrypt_round       | i_mix_columns/mul_by_20  | 256x8         | LUT            | 
+|encrypt_round       | i_mix_columns/mul_by_211 | 256x8         | LUT            | 
+|encrypt_round       | i_mix_columns/mul_by_311 | 256x8         | LUT            | 
+|encrypt_round       | i_mix_columns/mul_by_27  | 256x8         | LUT            | 
+|encrypt_round       | i_mix_columns/mul_by_37  | 256x8         | LUT            | 
+|encrypt_round       | i_mix_columns/mul_by_23  | 256x8         | LUT            | 
+|encrypt_round       | i_mix_columns/mul_by_33  | 256x8         | LUT            | 
+|encrypt_round       | i_mix_columns/mul_by_3   | 256x8         | LUT            | 
+|encrypt_round       | i_mix_columns/mul_by_2   | 256x8         | LUT            | 
+|encrypt_round       | i_sub_bytes/sbox         | 256x8         | LUT            | 
+|encrypt_round       | i_sub_bytes/sbox5        | 256x8         | LUT            | 
+|encrypt_round       | i_sub_bytes/sbox7        | 256x8         | LUT            | 
+|encrypt_round       | i_sub_bytes/sbox8        | 256x8         | LUT            | 
+|encrypt_round       | i_sub_bytes/sbox10       | 256x8         | LUT            | 
+|encrypt_round       | i_sub_bytes/sbox12       | 256x8         | LUT            | 
+|encrypt_round       | i_sub_bytes/sbox13       | 256x8         | LUT            | 
+|encrypt_round       | i_sub_bytes/sbox14       | 256x8         | LUT            | 
+|encrypt_round       | i_sub_bytes/sbox15       | 256x8         | LUT            | 
+|encrypt_round       | i_sub_bytes/sbox17       | 256x8         | LUT            | 
+|encrypt_round       | i_mix_columns/mul_by_214 | 256x8         | LUT            | 
+|encrypt_round       | i_mix_columns/mul_by_314 | 256x8         | LUT            | 
+|encrypt_round       | i_mix_columns/mul_by_210 | 256x8         | LUT            | 
+|encrypt_round       | i_mix_columns/mul_by_26  | 256x8         | LUT            | 
+|encrypt_round       | i_mix_columns/mul_by_32  | 256x8         | LUT            | 
+|encrypt_round       | i_mix_columns/mul_by_22  | 256x8         | LUT            | 
+|encrypt_round       | i_mix_columns/mul_by_213 | 256x8         | LUT            | 
+|encrypt_round       | i_mix_columns/mul_by_313 | 256x8         | LUT            | 
+|encrypt_round       | i_mix_columns/mul_by_29  | 256x8         | LUT            | 
+|encrypt_round       | i_mix_columns/mul_by_39  | 256x8         | LUT            | 
+|encrypt_round       | i_mix_columns/mul_by_25  | 256x8         | LUT            | 
+|encrypt_round       | i_mix_columns/mul_by_35  | 256x8         | LUT            | 
+|encrypt_round       | i_mix_columns/mul_by_31  | 256x8         | LUT            | 
+|encrypt_round       | i_mix_columns/mul_by_21  | 256x8         | LUT            | 
+|encrypt_round       | i_mix_columns/mul_by_212 | 256x8         | LUT            | 
+|encrypt_round       | i_mix_columns/mul_by_312 | 256x8         | LUT            | 
+|encrypt_round       | i_mix_columns/mul_by_28  | 256x8         | LUT            | 
+|encrypt_round       | i_mix_columns/mul_by_38  | 256x8         | LUT            | 
+|encrypt_round       | i_mix_columns/mul_by_24  | 256x8         | LUT            | 
+|encrypt_round       | i_mix_columns/mul_by_34  | 256x8         | LUT            | 
+|encrypt_round       | i_mix_columns/mul_by_30  | 256x8         | LUT            | 
+|encrypt_round       | i_mix_columns/mul_by_20  | 256x8         | LUT            | 
+|encrypt_round       | i_mix_columns/mul_by_211 | 256x8         | LUT            | 
+|encrypt_round       | i_mix_columns/mul_by_311 | 256x8         | LUT            | 
+|encrypt_round       | i_mix_columns/mul_by_27  | 256x8         | LUT            | 
+|encrypt_round       | i_mix_columns/mul_by_37  | 256x8         | LUT            | 
+|encrypt_round       | i_mix_columns/mul_by_23  | 256x8         | LUT            | 
+|encrypt_round       | i_mix_columns/mul_by_33  | 256x8         | LUT            | 
+|encrypt_round       | i_mix_columns/mul_by_3   | 256x8         | LUT            | 
+|encrypt_round       | i_mix_columns/mul_by_2   | 256x8         | LUT            | 
+|encrypt_round       | i_sub_bytes/sbox         | 256x8         | LUT            | 
+|encrypt_round       | i_sub_bytes/sbox4        | 256x8         | LUT            | 
+|encrypt_round       | i_sub_bytes/sbox8        | 256x8         | LUT            | 
+|encrypt_round       | i_sub_bytes/sbox12       | 256x8         | LUT            | 
+|encrypt_round       | i_sub_bytes/sbox16       | 256x8         | LUT            | 
+|encrypt_round       | i_mix_columns/mul_by_214 | 256x8         | LUT            | 
+|encrypt_round       | i_mix_columns/mul_by_210 | 256x8         | LUT            | 
+|encrypt_round       | i_mix_columns/mul_by_26  | 256x8         | LUT            | 
+|encrypt_round       | i_mix_columns/mul_by_36  | 256x8         | LUT            | 
+|encrypt_round       | i_mix_columns/mul_by_32  | 256x8         | LUT            | 
+|encrypt_round       | i_mix_columns/mul_by_22  | 256x8         | LUT            | 
+|encrypt_round       | i_mix_columns/mul_by_213 | 256x8         | LUT            | 
+|encrypt_round       | i_mix_columns/mul_by_313 | 256x8         | LUT            | 
+|encrypt_round       | i_mix_columns/mul_by_29  | 256x8         | LUT            | 
+|encrypt_round       | i_mix_columns/mul_by_39  | 256x8         | LUT            | 
+|encrypt_round       | i_mix_columns/mul_by_25  | 256x8         | LUT            | 
+|encrypt_round       | i_mix_columns/mul_by_35  | 256x8         | LUT            | 
+|encrypt_round       | i_mix_columns/mul_by_31  | 256x8         | LUT            | 
+|encrypt_round       | i_mix_columns/mul_by_21  | 256x8         | LUT            | 
+|encrypt_round       | i_mix_columns/mul_by_212 | 256x8         | LUT            | 
+|encrypt_round       | i_mix_columns/mul_by_312 | 256x8         | LUT            | 
+|encrypt_round       | i_mix_columns/mul_by_28  | 256x8         | LUT            | 
+|encrypt_round       | i_mix_columns/mul_by_38  | 256x8         | LUT            | 
+|encrypt_round       | i_mix_columns/mul_by_24  | 256x8         | LUT            | 
+|encrypt_round       | i_mix_columns/mul_by_34  | 256x8         | LUT            | 
+|encrypt_round       | i_mix_columns/mul_by_30  | 256x8         | LUT            | 
+|encrypt_round       | i_mix_columns/mul_by_20  | 256x8         | LUT            | 
+|encrypt_round       | i_mix_columns/mul_by_211 | 256x8         | LUT            | 
+|encrypt_round       | i_mix_columns/mul_by_311 | 256x8         | LUT            | 
+|encrypt_round       | i_mix_columns/mul_by_27  | 256x8         | LUT            | 
+|encrypt_round       | i_mix_columns/mul_by_37  | 256x8         | LUT            | 
+|encrypt_round       | i_mix_columns/mul_by_23  | 256x8         | LUT            | 
+|encrypt_round       | i_mix_columns/mul_by_33  | 256x8         | LUT            | 
+|encrypt_round       | i_mix_columns/mul_by_3   | 256x8         | LUT            | 
+|encrypt_round       | i_mix_columns/mul_by_2   | 256x8         | LUT            | 
+|encrypt_round       | i_sub_bytes/sbox         | 256x8         | LUT            | 
+|encrypt_round       | i_sub_bytes/sbox3        | 256x8         | LUT            | 
+|encrypt_round       | i_sub_bytes/sbox4        | 256x8         | LUT            | 
+|encrypt_round       | i_sub_bytes/sbox6        | 256x8         | LUT            | 
+|encrypt_round       | i_sub_bytes/sbox9        | 256x8         | LUT            | 
+|encrypt_round       | i_mix_columns/mul_by_214 | 256x8         | LUT            | 
+|encrypt_round       | i_mix_columns/mul_by_314 | 256x8         | LUT            | 
+|encrypt_round       | i_mix_columns/mul_by_310 | 256x8         | LUT            | 
+|encrypt_round       | i_mix_columns/mul_by_26  | 256x8         | LUT            | 
+|encrypt_round       | i_mix_columns/mul_by_32  | 256x8         | LUT            | 
+|encrypt_round       | i_mix_columns/mul_by_27  | 256x8         | LUT            | 
++--------------------+--------------------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:47 ; elapsed = 00:00:50 . Memory (MB): peak = 941.945 ; gain = 679.348
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:50 ; elapsed = 00:00:52 . Memory (MB): peak = 941.945 ; gain = 679.348
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:51 ; elapsed = 00:00:53 . Memory (MB): peak = 941.945 ; gain = 679.348
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:51 ; elapsed = 00:00:54 . Memory (MB): peak = 941.945 ; gain = 679.348
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:52 ; elapsed = 00:00:54 . Memory (MB): peak = 941.945 ; gain = 679.348
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:52 ; elapsed = 00:00:54 . Memory (MB): peak = 941.945 ; gain = 679.348
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:52 ; elapsed = 00:00:54 . Memory (MB): peak = 941.945 ; gain = 679.348
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:52 ; elapsed = 00:00:54 . Memory (MB): peak = 941.945 ; gain = 679.348
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+------+------+
+|      |Cell  |Count |
++------+------+------+
+|1     |BUFG  |     1|
+|2     |LUT2  |   373|
+|3     |LUT3  |   237|
+|4     |LUT4  |   486|
+|5     |LUT5  |   847|
+|6     |LUT6  |  7636|
+|7     |MUXF7 |  3129|
+|8     |MUXF8 |  1520|
+|9     |FDRE  |  1280|
+|10    |IBUF  |   257|
+|11    |OBUF  |   128|
++------+------+------+
+
+Report Instance Areas: 
++------+--------------------------+----------------------+------+
+|      |Instance                  |Module                |Cells |
++------+--------------------------+----------------------+------+
+|1     |top                       |                      | 15894|
+|2     |  i_encrypt_top           |encrypt_top           | 12193|
+|3     |    i_encrypt_round_2     |encrypt_round_9       |   481|
+|4     |      i_mix_columns       |mix_columns_29        |    97|
+|5     |      i_sub_bytes         |sub_bytes_30          |   384|
+|6     |    i_encrypt_round_3     |encrypt_round_10      |   462|
+|7     |      i_mix_columns       |mix_columns_27        |    78|
+|8     |      i_sub_bytes         |sub_bytes_28          |   384|
+|9     |    i_encrypt_round_4     |encrypt_round_11      |   449|
+|10    |      i_mix_columns       |mix_columns_25        |    65|
+|11    |      i_sub_bytes         |sub_bytes_26          |   384|
+|12    |    i_encrypt_round_5     |encrypt_round_12      |   462|
+|13    |      i_mix_columns       |mix_columns_23        |    78|
+|14    |      i_sub_bytes         |sub_bytes_24          |   384|
+|15    |    i_encrypt_round_6     |encrypt_round_13      |   479|
+|16    |      i_mix_columns       |mix_columns_21        |    95|
+|17    |      i_sub_bytes         |sub_bytes_22          |   384|
+|18    |    i_encrypt_round_7     |encrypt_round_14      |   445|
+|19    |      i_mix_columns       |mix_columns_19        |    61|
+|20    |      i_sub_bytes         |sub_bytes_20          |   384|
+|21    |    i_encrypt_round_8     |encrypt_round_15      |   459|
+|22    |      i_mix_columns       |mix_columns_17        |    75|
+|23    |      i_sub_bytes         |sub_bytes_18          |   384|
+|24    |    i_encrypt_round_9     |encrypt_round_16      |   476|
+|25    |      i_mix_columns       |mix_columns           |    92|
+|26    |      i_sub_bytes         |sub_bytes             |   384|
+|27    |    i_encrypt_final_round |encrypt_final_round   |   384|
+|28    |      i_sub_bytes         |sub_bytes_33          |   384|
+|29    |    i_encrypt_round_1     |encrypt_round         |   560|
+|30    |      i_mix_columns       |mix_columns_31        |    80|
+|31    |      i_sub_bytes         |sub_bytes_32          |   480|
+|32    |  i_expand_key_top        |expand_key_top        |  3315|
+|33    |    i_expand_key_core_1   |expand_key_core_fix   |  2505|
+|34    |    i_expand_key_core_10  |expand_key_core_fix_0 |    64|
+|35    |    i_expand_key_core_2   |expand_key_core_fix_1 |    95|
+|36    |    i_expand_key_core_3   |expand_key_core_fix_2 |    96|
+|37    |    i_expand_key_core_4   |expand_key_core_fix_3 |    96|
+|38    |    i_expand_key_core_5   |expand_key_core_fix_4 |    96|
+|39    |    i_expand_key_core_6   |expand_key_core_fix_5 |    90|
+|40    |    i_expand_key_core_7   |expand_key_core_fix_6 |    92|
+|41    |    i_expand_key_core_8   |expand_key_core_fix_7 |    91|
+|42    |    i_expand_key_core_9   |expand_key_core_fix_8 |    90|
++------+--------------------------+----------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:52 ; elapsed = 00:00:54 . Memory (MB): peak = 941.945 ; gain = 679.348
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:52 ; elapsed = 00:00:54 . Memory (MB): peak = 941.945 ; gain = 679.348
+Synthesis Optimization Complete : Time (s): cpu = 00:00:52 ; elapsed = 00:00:54 . Memory (MB): peak = 941.945 ; gain = 679.348
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 4649 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 941.945 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+82 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:57 ; elapsed = 00:01:01 . Memory (MB): peak = 941.945 ; gain = 688.574
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 941.945 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'D:/doan2/aes128/vivado/project_1/project_1.runs/synth_1/aes128_encrypt_top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file aes128_encrypt_top_utilization_synth.rpt -pb aes128_encrypt_top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Sep 29 10:35:00 2025...
